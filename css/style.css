@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #161c1f;
+}
+
+.main {
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1161px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.text {
+	margin: 0;
+}
+
+.hero {
+	padding: 50px 0;
+}
+
+.hero__container {
+	max-width: 1161px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.inp-tabs {
+	display: none;
+}
+
+.text2 {
+	font-weight: 700;
+	font-size: 18px;
+	color: #f2a800;
+}
+
+.tabs-main {
+	max-width: 456px;
+	min-height: 62px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.tabs-text {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tabs-text p {
+	line-height: 20px;
+
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #d1d1d1;
+}
+
+.tabs-text span {
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+}
+
+.tabs-main label {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+	color: #fff;
+}
+
+.inp-range {
+	width: 100%;
+	border-radius: 30px;
+	height: 20px;
+	background: #585c5e;
+}
+
+.inp-range span {
+	display: block;
+	border-radius: 30px;
+	width: 24px;
+	height: 20px;
+	background: #f2a800;
+	opacity: 1;
+}
+
+.write-amd {
+	position: relative;
+
+}
+
+.plice span {
+	position: absolute;
+	right: 0;
+	font-family: "Gilroy", sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+	color: #fff;
+	transform: translateY(35%);
+}
+
+.tabs>.wrap {
+	display: none;
+}
+
+#amd:checked~.tabs>.wrap:nth-of-type(1),
+#usd:checked~.tabs>.wrap:nth-of-type(2),
+#eur:checked~.tabs>.wrap:nth-of-type(3),
+#rub:checked~.tabs>.wrap:nth-of-type(4) {
+	display: block;
+}
+
+.write-amd p {
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #fff;
+}
+
+.write-amd input {
+	border-radius: 8px;
+	width: 100%;
+	height: 43px;
+	background: #fff;
+	opacity: 0.2;
+}
+
+.footer {
+	background: #161c1f;
+	color: #fff;
+	padding: 0px 0 40px 0;
+}
+
+p {
+	font-family: Gilroy, sans-serif;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#card-left {
+	max-width: 524px;
+}
+
+@media(max-width:1040px){
+	#card-left {
+		margin: 0 auto;
+	}
+}
+
+#wrapper #card-left {
+	display: flex;
+	flex: 1 1 100%;
+	flex-basis: 601px;
+	flex-direction: column;
+}
+
+#card-left-title span {
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 500;
+	font-size: 44px;
+	color: #fff;
+}
+
+#card-left-descr p {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	padding: 15px;
+}
+
+#card-right {
+	max-width: 560px;
+	/*	flex-grow: 1;*/
+	border: 1px solid #91c3da;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 50px;
+	align-self: start;
+	font-family: Gilroy, sans-serif;
+}
+
+.btn input {
+	background: #f2a800;
+	opacity: 1;
+	cursor: pointer;
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+}
+
+.question {
+	text-align: center;
+}
+
+#wrapper #card-right {
+	display: flex;
+	flex: 1 1 100%;
+	flex-basis: 560px;
+	height: 579px;
+}
+
+#card-right #card-right-title {
+	padding: 30px;
+	position: relative;
+	text-align: center;
+}
+
+#card-right #card-right-title span {
+	font-family: "Montserrat arm", sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #f2a800;
+}
+
+#card-right #card-right-title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #fff;
+	width: 100%;
+	height: 0px;
+}
+
+#next-img {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+@media screen and (max-width:1085px) {
+
+	#next-img img {
+		width: 53px;
+		height: 53px;
+	}
+
+	#card-left-title {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#card-left-title span {
+		font-family: "Gilroy", sans-serif;
+		font-weight: 500;
+		font-size: 25px;
+		text-align: center;
+		color: #fff;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+	.card-right-box {
+		margin: auto;
+		border: 1px solid #91c3da;
+		border-radius: 10px;
+		max-width: 351px;
+		min-height: 544px;
+		background: rgba(255, 255, 255, 0.1);
+		margin-bottom: 30px;
+	}
+
+	#card-right {
+		padding: 5px;
+
+	}
+
+	.tabs-text span {
+		font-size: 11px;
+	}
+
+	.tabs-text p {
+		font-size: 13px;
+	}
+
+	.tabs-main label {
+		font-size: 19px;
+
+	}
+
+	.sup {
+		margin: 0 auto !important;
+		max-width: 90% !important;
+		height: 38px !important;
+	}
+
+	.btn_p {
+		text-align: center;
+	}
+}
+
+/*#amds:after,
+#usds:after,
+#eurs:after,
+#rubs:after{
+	content: "";
+	position: absolute;
+	width: 110px;
+	height: 40px;
+	background: red;
+	bottom: -30px;
+	display: none;
+}*/
+.tab-item {
+	width: 0%;
+	height: 2px;
+	background: transparent;
+	transition: 0.3s;
+}
+
+.tab-active {
+	width: 100%;
+	background: orange;
+}
